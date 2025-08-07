@@ -46,6 +46,7 @@ import sliderimg10 from "../assets/images/sliderimg10.avif";
 import sliderimg11 from "../assets/images/sliderimg11.avif";
 import sliderimg12 from "../assets/images/sliderimg12.avif";
 import downaerrow from "../assets/images/down-arrow.png";
+import testimonial from "../assets/images/testimonials.webp";
 
 
 
@@ -98,4 +99,5 @@ export {sliderimg10}
 export {sliderimg11}
 export {sliderimg12}
 export {downaerrow}
+export {testimonial}
 
