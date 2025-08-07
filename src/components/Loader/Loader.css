@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap");
+
+.loader-container {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to right, #f5eee4, #d8bfa3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.logo {
+  margin-bottom: 1.5rem;
+  animation: logoFade 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes logoFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loader-text {
+  display: flex;
+  animation: textFadeIn 1s ease forwards;
+}
+
+.loader-text span {
+  opacity: 0;
+  font-size: 20px;
+  font-weight: 500;
+  animation: fadeLetter 0.6s ease forwards;
+  letter-spacing: 15px;
+  word-spacing: 10px;
+}
+
+@keyframes fadeLetter {
+  to {
+    opacity: 1;
+    color: white;
+  }
+}
+

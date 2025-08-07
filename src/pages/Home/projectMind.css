@@ -1,0 +1,134 @@
+
+.project-mind-div-main {
+  background-color: #101010;
+  padding: 100px 0 0;
+}
+
+.project-mind-main {
+  width: 100%;
+  /* min-height: 63vh; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+}
+
+.blueprint-image {
+  /* width: 1114px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0; */
+
+  width: 1114px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  opacity: 0;
+  animation: fadeInImage 1.2s ease forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes fadeInImage {
+  to {
+    opacity: 1;
+  }
+}
+.overlay1 {
+  color: white;
+  z-index: 1;
+  margin-bottom: 200px;
+}
+
+.top-text {
+  color: #bc9b73;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.heading {
+  /* font-family: "DM Sans", sans-serif;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 1em;
+  margin-bottom: 32px;
+  margin: 0; */
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.contact-button {
+  background-color: #bc9b73;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 40px;
+  padding: 14px 35px 14px 35px;
+  font-weight: 500;
+  border-radius: 50rem 50rem 50rem 50rem;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+@media (max-width:1024px) {
+  .heading {
+    font-size: 50px;
+  }
+
+  .blueprint-image {
+    max-width: 720px;
+  }
+
+  .overlay1 {
+    margin-bottom: 300px;
+  }
+
+  .blueprint-image {
+    top: 66%;
+  }
+
+  .contact-button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width:425px) {
+  .heading {
+    font-size: 34px;
+    line-height: 1.3;
+  }
+  .project-mind-div-main {
+    background-color: #101010;
+    padding: 100px 20px 0px;
+}
+}

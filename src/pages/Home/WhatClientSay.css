@@ -1,0 +1,142 @@
+.what-clientsays-main-div {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 100px 0 120px 0;
+}
+.testimonial-container {
+  text-align: center;
+}
+.outlined-text1 {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffffff;
+  opacity: 0.1;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.testimonial-slide {
+  background-color: transparent;
+  border-radius: 12px;
+  max-width: 850px;
+  margin: auto;
+}
+.testimonial-container {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.client-name {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 90px;
+}
+
+.testimonial-text {
+  font-family: "Jost", Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #999999;
+  text-align: left;
+}
+
+.highlight {
+  color: #bc9b73;
+  font-family: "Jost", Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+.quote-icon img {
+  width: 40px;
+}
+
+.slick-dots li button:before {
+  color: #bc9b73 !important;
+  font-size: 10px !important;
+}
+.quite-desc-div {
+  display: flex;
+  align-items: center;
+}
+.quite-div-main-desc {
+  padding-left: 200px;
+}
+.slick-dots li {
+  margin: 0 -2px !important;
+}
+.slick-dots {
+  right: 410px;
+}
+
+@media (max-width: 1024px) {
+  .quite-div-main-desc {
+    padding-left: 130px !important;
+  }
+  .what-clientsays-main-div {
+    padding: 100px 0 120px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .testimonial-container {
+    max-width: 650px !important;
+  }
+  .testimonial-slide {
+    max-width: 650px;
+  }
+  .slick-dots {
+    right: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-text {
+    font-size: 20px;
+  }
+  .highlight {
+    font-size: 20px;
+  }
+  .what-client-main-div {
+    padding: 0 20px;
+  }
+  .slick-dots {
+    right: 0;
+  }
+  .outlined-text1 {
+    line-height: 1.1em;
+  }
+      .what-clientsays-main-div {
+        padding: 50px 0 120px 0;
+    }
+}
+
+@media (max-width: 640px) {
+  .quite-div-main-desc {
+    padding-left: 6px !important;
+  }
+  .client-name {
+    padding-left: 40px;
+  }
+  .outlined-text1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .outlined-text1 {
+        font-size: 40px;
+    }
+}

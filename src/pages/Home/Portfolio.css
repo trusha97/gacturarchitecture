@@ -1,0 +1,229 @@
+.portfolio-section {
+  padding: 6rem 2rem;
+  background-color: #0f0f0f;
+  color: white;
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.portfolio-header {
+  margin-bottom: 3rem;
+}
+
+.portfolio-subtitle {
+  color: #BC9B73;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  line-height: 1.2;
+  max-width: 550px;
+}
+
+.portfolio-slide.single {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+  top: 200px;
+  transition: all 1s ease;
+  bottom: unset;
+}
+
+.swiper-slide-active .portfolio-slide.single {
+  top: 0;
+  left: 0;
+  right: unset;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #10101000 0%, #10101099 100%);
+  z-index: 1;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  padding: 1rem 1.5rem;
+  z-index: 2;
+}
+
+.category {
+  background-color: #111111;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px 20px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.title-blending {
+  font-family: Jost, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.portfolio-swiper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.swiper-slide {
+  position: relative;
+  transition: all 0.8s ease-in-out;
+}
+
+.portfolio-pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  position: relative;
+  padding-top: 20px;
+}
+
+.portfolio-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #2e2e2e;
+  overflow: hidden;
+}
+
+.portfolio-progress-fill {
+  height: 100%;
+  background-color: #BC9B73;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+.portfolio-fraction {
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.swiper-dots.swiper-pagination-bullets {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #BC9B73;
+  width: 9px;
+  height: 9px;
+}
+
+.swiper-dots.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  top: -900px;
+  right: 0;
+  left: unset;
+}
+
+.cursor {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  color: #BC9B73;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width:1025px) {
+    .swiper-dots.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+        position: absolute;
+        top: -115px;
+        right: 50%;
+        left: unset;
+    }
+.portfolio-pagination-container{
+  margin-top: 5.5rem;
+}
+.portfolio-section {
+  padding: 0 8rem;
+}
+}
+@media (max-width:768px) {
+      .portfolio-section {
+        padding: 3rem 1.2rem;
+    }
+}
+
+@media (max-width:600px) {
+  .portfolio-title{
+    font-size: 30px;
+  }
+  .title-blending {
+    font-family: Jost, sans-serif;
+    font-size: 30px;
+    line-height: 1.0em;
+    margin: 0;
+    padding-top: 0;
+}
+}
+
+@media (max-width:426px) {
+  .portfolio-text{
+    padding: 0;
+  }
+      .swiper-dots.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+        position: absolute;
+        top: -115px;
+        right: 45%;
+        left: unset;
+    }
+}

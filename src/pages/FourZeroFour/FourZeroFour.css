@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap");
+
+:root {
+  --white: #fff;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+.error-main-div {
+  background-color: #101010;
+}
+
+.error-inner-div {
+  /* margin: 0 78px; */
+  padding: 120px 0;
+}
+
+.error {
+  text-align: center;
+}
+
+.error-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.error-follw {
+  font-family: "Jost", Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #fff;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.error-desc {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #999999;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.error-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.error-backpage {
+  padding: 12px 25px;
+  background-color: #161616;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.error-backpage:hover {
+  background-color: #BC9B73;
+  color: #fff;
+}
+.gactur-back-button {
+  padding: 14px 30px;
+  background: linear-gradient(145deg, #bfa074, #9e7c53);
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.gactur-back-button:hover {
+  background: linear-gradient(145deg, #d3b386, #bc9b73);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+@media (max-width:640px) {
+    h2.error-follw {
+    font-size: 18px;
+}
+.error-inner-div {
+    margin: 0 ;
+    padding: 120px 20px;
+}
+}

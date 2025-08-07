@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap");
+
+body {
+  font-family: "DM Sans";
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-main {
+  background-color: #0c0f16;
+  color: white;
+  padding: 120px 0px 50px 275px;
+}
+
+.footer-inner {
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+}
+
+a {
+  color: white;
+}
+
+.footer-desc {
+  width: 33.333%;
+}
+
+.footer-number {
+  width: 25%;
+}
+
+.footer-addres {
+  width: 25%;
+}
+
+.hello-gmail {
+  font-family: "Jost", Sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #ffffff;
+  margin: 0;
+}
+.our-website-div {
+  margin-bottom: 30px;
+}
+.hello-text {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.8em;
+  letter-spacing: 2px;
+  color: #999999;
+  margin: 15px 0px 0px 0px;
+  max-width: 350px;
+}
+
+.our-website {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #999999;
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.gactur-gmail {
+  font-family: "Jost", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #ffffff;
+  margin: 0;
+}
+.brooklyn {
+  font-family: "Jost", Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 4px;
+}
+.brooklyn-desc {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #999999;
+  margin: 0;
+  max-width: 285px;
+}
+
+.social-icon-main {
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.social-icon-inner {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+}
+.footer-link-main {
+  width: 50%;
+  display: flex;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #69727d;
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.icon-img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.icon-wrapper:hover {
+  background: #bc9b73;
+  border: 1px solid #fff;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.footer-link-item {
+  text-align: left;
+}
+
+.footer-link-item h2 span {
+  margin-bottom: 4px;
+  text-align: left;
+  display: block;
+}
+
+.footer-link-item a {
+  text-decoration: none;
+  display: block;
+}
+.footer-link-item a :hover {
+  color: #bc9b73;
+}
+.link-page {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  color: #999999;
+}
+
+.themescamp-main-div {
+  background-color: #101010;
+  padding: 30px 0;
+}
+.theme-right {
+  white-space: wrap;
+    text-align: center;
+    color: #999999;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    margin: 0;
+}
+.theme-link{
+  white-space: wrap;
+    text-align: center;
+    color: #fff;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+@media (max-width: 1480px) {
+  .footer-main {
+    padding: 120px 0px 50px 90px;
+  }
+  .footer-inner {
+    justify-content: center;
+  }
+  .social-icon-inner {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer-main {
+    padding: 120px 0px 50px 30px;
+  }
+  .footer-inner {
+    justify-content: space-around;
+  }
+  .footer-link {
+    gap: 40px;
+  }
+  .hello-gmail {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .hello-gmail {
+    text-align: center;
+  }
+  .hello-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer-hurry {
+    margin-bottom: 40px;
+  }
+  .brooklyn {
+    text-align: center;
+  }
+  .brooklyn-desc {
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer-link-item h2 span {
+    text-align: center;
+  }
+  .footer-main {
+    padding: 100px 30px 50px 30px;
+  }
+  .footer-inner {
+    display: block;
+  }
+  .footer-desc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-number {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ Center horizontally */
+    text-align: center; /* ✅ Optional: center text content */
+    margin-top: 40px; /* ✅ Optional: spacing between sections */
+  }
+  .footer-addres {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .social-icon-main {
+    display: block;
+  }
+  .social-icon-inner {
+    width: 100%;
+  }
+  .footer-link-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:640px) {
+    .hello-gmail {
+        font-size: 35px;
+    }
+}
+@media (max-width: 426px) {
+  .footer-link {
+    gap: 15px;
+  }
+  .brooklyn {
+    font-size: 20px;
+  }
+  .gactur-gmail {
+    font-size: 20px;
+  }
+  .hello-gmail {
+        font-size: 30px;
+    }
+    .hello-text {
+        font-size: 14px;
+    }
+    .link-page {
+        font-size: 12px;
+    }
+}
