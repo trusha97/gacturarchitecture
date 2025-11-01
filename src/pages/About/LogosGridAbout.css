@@ -1,0 +1,65 @@
+.logo-main-div-about {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-bottom: 120px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 2px solid #FFFFFF11;
+  border-left: 2px solid #FFFFFF11;
+}
+
+.logo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #FFFFFF11;
+  border-bottom: 2px solid #FFFFFF11;
+  transition: all 0.3s ease-in-out;
+  min-height: 300px;
+   background-color: #101010;
+    position: relative;
+    z-index: 99;
+}
+
+.logo-card img {
+  max-width: 160px;
+  height: auto;
+  filter: grayscale(1);
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+/* 👇 hover effect only on image */
+.logo-card:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+.logo-main-div-about {
+      max-width: 720px;
+
+  }
+  /* .logo-card img {
+    max-width: 100%;
+  } */
+
+}
+
+/* @media (max-width: 600px) {
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+} */

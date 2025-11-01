@@ -8,19 +8,28 @@ import About from './Home/About'
 import Portfolio from './Home/Portfolio'
 import PentagramSlider from './Home/pentagramSlider'
 import MindProject from './Home/MindProject'
+import "./Home.css"
 
 const Home = () => {
   return (
     <>
-      <Banner />
-      <About />
-      <VipCustomer />
-      <BestService />
-      <Portfolio />
-      <WhatClientSay />
-      <ImageProject />
-      <MindProject/>
-      <PentagramSlider />
+      <div className='all-section-main-div'>
+        <div className="vertical-lines1">
+        <div className="line32"></div>
+        <div className="line32"></div>
+        <div className="line32"></div>
+        <div className="line32"></div>
+      </div>
+        <PentagramSlider />
+        <Banner />
+        <About />
+        <VipCustomer />
+        <BestService />
+        <Portfolio />
+        <WhatClientSay />
+        <ImageProject />
+        <MindProject />
+      </div>
     </>
   )
 }

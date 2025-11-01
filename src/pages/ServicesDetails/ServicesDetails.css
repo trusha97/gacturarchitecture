@@ -1,0 +1,127 @@
+
+.about-div-main-div1 {
+  position: relative;       
+  min-height: 100vh;
+  max-height: 100%;       
+}
+
+.singlepost-creative-banner-div1 {
+  overflow: hidden;
+  position: relative;
+  padding: 180px 76.8px 50px;
+  border-radius: 7px;
+}
+
+.image-single-div-main-img1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: #15222b; */
+  /* background-color: #0C0F16; */
+  background-color: transparent;
+  --background-overlay: "";
+  background-image: linear-gradient(180deg, #101010cc 0%, #1010104d 100%);
+  opacity: 0.6;
+}
+.image-single-div-main-img1 {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-position: center;
+}
+.pages-text {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.center-content12 {
+  text-align: center;
+  z-index: 2;
+  display: grid;
+  margin-bottom: 100px;
+}
+.singlecreative-title1 {
+  color: #fff;
+  margin: 0;
+  font-family: "Jost", Sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 1.3em;
+  padding-bottom: 30px;
+}
+.box5 {
+  background-color: #10101077;
+  border-color: #ffffff11;
+  padding: 10px 30px 10px 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  min-width: 250px;
+  margin-top: 30px;
+  /* width: 340px; */
+  margin: 0 auto;
+}
+.box-right5 .circle-img5 {
+  background-image: url("../../assets/images/hero2.webp");
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.box-title5 {
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 4px;
+  font-family: "Jost", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+.box-sub5 {
+  color: #ffffff;
+  margin: 0;
+  text-align: left;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8em;
+  opacity: 0.5;
+}
+@media (max-width: 1024px) {
+  .singlecreative-title1 {
+    font-size: 50px;
+  }
+  .box-title5 {
+    font-size: 14px;
+  }
+  .box-sub5 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 501px) {
+  .box-title4 {
+    font-size: 14px;
+  }
+  .box-sub4 {
+    font-size: 12px;
+  }
+  .singlepost-creative-banner-div1 {
+    padding: 180px 12.8px 50px;
+  }
+ 
+}

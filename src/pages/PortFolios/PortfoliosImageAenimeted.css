@@ -1,0 +1,187 @@
+.portfoloi-image-div-main-aenimted {
+    padding: 20px 0 120px 0;
+}
+.poertfolio-image-aenimted {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+.portfolios2-image-div-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 100px;
+}
+.portfolio-aemited-image-main-div {
+  height: 550px;
+  width: 66.66%;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-aemited-image-main-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.portfolio-aemited-image-main-div2 {
+  height: 400px;
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-aemited-image-main-div2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.portfolio-aemited-image-main-div,
+.portfolio-aemited-image-main-div2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-aemited-image-main-div::after,
+.portfolio-aemited-image-main-div2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+
+  background-color: transparent;
+  border-radius: 0px 0px 0px 0px;
+  background-image: linear-gradient(180deg, #10101000 0%, #10101099 100%);
+  opacity: 1;
+}
+
+.portfolio-aemited-image-main-div img,
+.portfolio-aemited-image-main-div2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  position: relative;
+  z-index: 1;
+
+  clip-path: polygon(25% 0, 75% 0, 75% 100%, 25% 100%);
+  opacity: 0;
+  transform: rotate(-7deg) scale(1.3);
+
+  animation: imageReveal 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.portfolio-aemited-image-main-div2 img {
+  animation-delay: 0.5s;
+}
+
+/* Keyframes for animation */
+@keyframes imageReveal {
+  0% {
+    clip-path: polygon(25% 0, 75% 0, 75% 100%, 25% 100%);
+    opacity: 0;
+    transform: rotate(-7deg) scale(1.3);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+/* Overlay text */
+.portfolio-overlay {
+  position: absolute;
+  bottom: 35px;
+  left: 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.4s ease;
+  z-index: 99;
+  color: #fff;
+}
+
+.portfolio-overlay h3 {
+  font-family: "Jost", Sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.portfolio-overlay1 h3 {
+  font-family: "Jost", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.portfolio-tag {
+  background-color: #111111;
+  display: inline-block;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #ffffff;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 30px 30px 30px 30px;
+}
+.portfolio-tag1 {
+  color: #ffffff;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+
+/* Hover effect */
+.portfolio-aemited-image-main-div:hover .portfolio-overlay,
+.portfolio-aemited-image-main-div2:hover .portfolio-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  @media (max-width: 1024px) {
+  .portfolios2-image-div-main {
+    display: block;
+    margin-bottom: 0; /* parent no extra margin na ave */
+    padding-top: 0;
+  }
+  .portfolio-aemited-image-main-div,
+  .portfolio-aemited-image-main-div2 {
+    height: 300px;
+    margin: 0 auto 20px auto; /* bottom margin 20px for spacing */
+    max-width: 666px;
+    width: 100%;
+  }
+  .portfolio-overlay {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .portfolio-tag {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .portfolio-overlay h3 {
+    font-size: 20px;
+  }
+
+}

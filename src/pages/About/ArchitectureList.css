@@ -1,0 +1,234 @@
+/* -------------------- Architecture Section -------------------- */
+.architecture-list-div {
+  max-width: 1320px;
+  width: 100%;
+  padding: 80px 20px 100px;
+  margin: 0 auto;
+}
+
+.inspir-about-text1 {
+  font-family: "Jost", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #bc9b73;
+  margin-left: 12px;
+  letter-spacing: 0.5px;
+}
+
+.inspiration-image-text-div {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.insights-hed h2 {
+  font-family: "Jost", Sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.3em;
+  color: #fff;
+  max-width: 620px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+/* -------------------- Services Section -------------------- */
+.services-container {
+  width: 100%;
+  background: #0f0f0f;
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+.service-left {
+  width: 41.66666667%;
+}
+.svg-button-service {
+  width: 33.33333333%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.service-icon22 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+.service-aenim-image {
+    height: 280px;
+    position: absolute;
+  right:30%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  pointer-events: none; 
+}
+.service-aenim-image22 {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transform: scale(0.95) rotate(0deg); /* Start straight */
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+/* Hover → sidhi avse, fade-in thase & rotate -30deg par j rokay */
+.service-row:hover .service-aenim-image22 {
+  opacity: 1;
+  transform: scale(1) rotate(-30deg);
+}
+
+/* Cursor hataavie → opacity gayab thase */
+.service-row:not(:hover) .service-aenim-image22 {
+  opacity: 0;
+  transform: scale(0.95) rotate(0deg); /* Reset for next hover */
+}
+.service-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  justify-content: space-between;
+  transition: background 0.3s ease;
+}
+
+
+.service-id-div {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #999999;
+  border: 1px solid #99999933;
+  padding: 5px 5px;
+  border-radius: 50%;
+  min-width: 34px;
+  text-align: center;
+}
+
+.service-title {
+  font-family: "Jost", Sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+
+
+.service-arrow {
+   width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: none;
+  background: #222;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+
+}
+
+.service-arrow svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: transform 0.3s ease;
+}
+
+.service-arrow:hover {
+  background: #bc9b73;
+}
+
+
+.service-row:hover .service-arrow {
+  background: #bc9b73;
+}
+/* -------------------- All Services Button -------------------- */
+.all-services-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.all-services-btn button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #bc9b73;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s,
+    transform var(--e-transform-transition-duration, 0.4s);
+}
+
+.all-services-btn button:hover {
+  transform: translateY(-2px); /* 👈 bottom to top smooth move */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* nice floating effect */
+}
+
+/* -------------------- Service Icon -------------------- */
+.service-icon22 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon22 img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition-property: opacity, transform;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* -------------------- Responsive -------------------- */
+@media (max-width: 992px) {
+  .service-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .service-title {
+    font-size: 24px;
+  }
+
+  .insights-hed h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-title {
+    font-size: 20px;
+  }
+
+  .service-arrow {
+    width: 50px;
+    height: 50px;
+  }
+
+  .insights-hed h2 {
+    font-size: 28px;
+  }
+}

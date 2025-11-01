@@ -202,6 +202,28 @@ a {
     font-weight: 400;
     line-height: 1.8em;
 }
+
+
+
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.line:nth-child(1) {
+  left: 18%;
+}
+.line:nth-child(2) {
+  left: 36%;
+}
+.line:nth-child(3) {
+  left: 64%;
+}
+.line:nth-child(4) {
+  left: 81%;
+}
 @media (max-width: 1480px) {
   .footer-main {
     padding: 120px 0px 50px 90px;

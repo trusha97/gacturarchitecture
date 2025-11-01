@@ -2,17 +2,22 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import FaqAccordion from "../components/Faq/FaqSection";
-import Reviesection from "../components/Review/Reviesection";
+import "./MainLayout.css"
 
 const Layout = ({ children }) => {
   return (
     <>
-      {/* <FaqAccordion/> */}
-      {/* <Reviesection/> */}
       <Header/>
       <main>{children}</main>
+       <div className='all-section-main-div3'>
+        <div className="vertical-lines111">
+        <div className="line302"></div>
+        <div className="line302"></div>
+        <div className="line302"></div>
+        <div className="line302"></div>
+      </div>
       <Footer/>
+      </div>
     </>
   );
 };

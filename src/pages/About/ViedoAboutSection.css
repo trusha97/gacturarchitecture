@@ -1,0 +1,232 @@
+.about-video-div {
+  max-width: 1320px;
+  width: 100%;
+  padding: 120px 0;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+.inspir-about-text133 {
+  font-family: "Jost", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #bc9b73;
+  margin-left: 12px;
+  letter-spacing: 0.5px;
+}
+.viedo-span-about {
+  padding: 14px 24px 14px 24px;
+  display: inline-block;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #ffffff;
+  fill: #ffffff;
+  border-radius: 50rem 50rem 50rem 50rem;
+  background: #bc9b73;
+}
+.viedo-span-about svg {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+.e-fas-play path {
+  fill: white;
+}
+.inspiration-image-text-div333 {
+  margin-bottom: 10px;
+}
+.about-architec-button {
+  font-family: "Jost", Sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.3em;
+  background: transparent; /* 🔥 white background remove kare chhe */
+  border: none; /* 🔥 border remove kare chhe */
+  color: white; /* text color parent jaisa */
+  cursor: pointer; /* pointer cursor */
+  padding: 0; /* unwanted padding remove */
+  text-align: left;
+}
+.viedo-mainabout-div {
+  max-width: 640px;
+}
+.dviedo-about-test-text {
+  margin-top: 30px;
+}
+.dviedo-about-test-text h2 {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #999999;
+  max-width: 510px;
+  display: block;
+  padding: 0px 0px 0px 100px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.dviedo-about-test-text h2::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #bc9b73;
+  display: block;
+  left: 0px;
+  top: 10px;
+  width: 85px;
+  height: 1px;
+  opacity: 0.2;
+  transform: rotate(0deg);
+}
+
+.about-video-inner-div {
+  width: 50%;
+}
+.progersh-about-div {
+  width: 50%;
+}
+.about-video-main-div {
+  display: flex;
+  gap: 30px;
+}
+
+.signature-image1 {
+  width: 12rem;
+  margin-top: 4.5rem;
+  filter: invert(1);
+  /* animation: zoomInOut 4s ease-in-out infinite; */
+}
+.progress-bars-wrapper1 {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  margin-top: 20px;
+}
+.progress-bar-container {
+  margin-bottom: 1.5rem;
+  /* width: 80%; */
+}
+.progress-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+.progress-bar-background {
+  width: 100%;
+  background-color: #252525;
+  border-radius: 9999px;
+  height: 6px;
+}
+.progress-bar-fill {
+  background-color: #bc9b73;
+  height: 6px;
+  border-radius: 9999px;
+  width: 0%; /* Start from 0 */
+  transition: width 2s ease; /* Smooth fill effect */
+}
+.progress-percentage {
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 1.8em;
+  color: #bc9b73;
+}
+
+/* Modal Overlay */
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Box */
+.video-modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  background: black;
+  border-radius: 10px;
+}
+
+/* Close Button */
+.video-close-btn {
+  z-index: 9994;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-appearance: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  font-style: normal;
+  font-size: 22px;
+  font-family: Arial, Baskerville, monospace;
+  line-height: 35px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  border: 0;
+  background: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+.about-image-click-viedo-div-main {
+  position: relative;
+  max-width: 1100px;
+  height: 613px;
+  margin: 0 auto;
+  cursor: none; /* 🔥 normal cursor hide */
+  overflow: hidden;
+  z-index: 99;
+}
+
+.about-image-click-viedo-div-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-image-click-viedo-div-inner {
+    margin-top: 50px;
+}
+
+/* Custom circle cursor */
+.video-cursor-circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #bc9b73;
+  text-transform: uppercase;
+  z-index: 30;
+  pointer-events: none;
+  padding: 30px;
+  text-align: center;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+}

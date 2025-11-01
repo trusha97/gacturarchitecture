@@ -1,15 +1,7 @@
-import React from 'react';
-import './VipCustomer.css';
-import { motion } from "framer-motion";
-
-import {
-  arciteh,
-  creativebuildurs,
-  gactur,
-  modern,
-  thedesign,
-  thespacegactur,
-} from '../../utils/images';
+import React from 'react'
+import { motion } from 'framer-motion'
+import "./VipCustomer.css"
+import { arciteh, creativebuildurs, gactur, modern, thedesign, thespacegactur } from '../../utils/images';
 
 const logos = [
   { src: modern, alt: "modern logo" },
@@ -20,11 +12,17 @@ const logos = [
   { src: thespacegactur, alt: "thespacegactur logo" },
 ];
 
+// fadeInUp animation variants
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 }
+};
+
 const VipCustomer = () => {
   return (
-    <div className='vip-customer-main'>
+    <div className='vip-customer-main1212'>
       <div className='vip-customer'>
-        <div className='vip-customer-our'>
+        <div className='vip-customer-our1'>
           <h2>
             Our Website <span>75000+</span> VIP Customer
           </h2>
@@ -32,32 +30,24 @@ const VipCustomer = () => {
         <div className='vip-website-main'>
           <div className='vip-inner-website'>
             {logos.map((logo, index) => (
-              // <motion.a
-              //   key={index}
-              //   href="#"
-              //   initial={{ scale: 1.1, opacity: 0 }}
-              //   animate={{ scale: 1, opacity: 1 }}
-              //   transition={{ delay: index * 0.1, duration: 0.6, ease: "easeOut" }}
-              // >
-              //   <img src={logo.src} alt={logo.alt} className="vip-logo" />
-              // </motion.a>
-
               <motion.a
-              key={index}
+                key={index}
                 href="#"
                 className="outlined-text3"
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 1, ease: "easeOut" }}
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+                viewport={{ once: true }}
               >
-                <img src={logo.src} alt={logo.alt} className="vip-logo" />
+                <img src={logo.src} alt={logo.alt} className="vip-logo1" />
               </motion.a>
             ))}
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default VipCustomer;
+export default VipCustomer

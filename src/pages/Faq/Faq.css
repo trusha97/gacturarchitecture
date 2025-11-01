@@ -1,0 +1,227 @@
+.faq-container {
+  /* flex: 0 0 660px;
+  max-width: 660px; */
+  width: 100%; 
+  min-height: 500px; 
+  color: #fff;
+  background-color: #0e0e0e;
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+.subtitle {
+  font-family: "Jost", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #bc9b73;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.title-faq-genral {
+  font-family: "Jost", Sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #ffffff;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 0 0 660px;
+  max-width: 660px;
+}
+
+.faq-item {
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: transparent;
+  width: 100%; 
+}
+
+.faq-item.active {
+  border-color: #ffffff33;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px 20px;
+  font-family: "Jost", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #ffffff;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ffffff1a;
+}
+
+
+.icon-faq {
+  font-size: 22px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+}
+.faq-item.active .faq-answer {
+  max-height: 500px;
+}
+
+.faq-answer p {
+  padding: 18px 24px;
+  margin: 0;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  line-height: 1.8em;
+  color: #999999;
+}
+
+.faq-text-accoding-div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 100px;
+}
+.faq-main-section-div {
+  display: flex;
+  width: 100%;
+  gap: 120px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+   align-items: flex-start;
+}
+.faq-image-second-main-div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.faq-section-image-div {
+  max-width: 251px;
+  width: 100%;
+}
+.faq-section-image-div img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center center;
+}
+.faq-section-image-div2 {
+  max-width: 251px;
+  width: 100%;
+}
+.faq-section-image-div2 img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.faq-inner-section-div {
+  padding-top: 100px;
+}
+
+.faq-section-text-main-div .subtitle,
+.faq-section-text-main-div .title-faq-genral {
+  display: block;
+  position: relative;
+  opacity: 0;
+  transform-origin: 50% 0%;
+  transform: translate3d(0px, 49.2404px, -41.3176px) rotateX(-80deg);
+  animation: faq3DEnter 1.2s ease-out forwards; 
+}
+
+.faq-section-text-main-div .title-faq-genral {
+  animation-delay: 0s;
+}
+
+@keyframes faq3DEnter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 49.2404px, -41.3176px) rotateX(-80deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) rotateX(0deg);
+  }
+}
+
+@media (max-width:1025px) {
+  .faq-main-section-div{
+    display:block;
+  }
+  .faq-list{
+    margin: 0 auto;
+  }
+  .faq-inner-section-div {
+    padding-top:0 ;
+  }
+  .faq-image-second-main-div{
+    justify-content: center;
+    align-items: flex-start;
+  }
+ .faq-section-image-div {
+    max-width: 310px;
+    width: 100%;
+}
+.faq-section-image-div2 {
+    max-width: 310px;
+    width: 100%;
+}
+.faq-section-image-div img{
+  height: 300px;
+}
+.faq-section-image-div2 img{
+  height: 300px;
+}
+ h6.subtitle {
+    text-align: center;
+}
+h2.title-faq-genral {
+    text-align: center;
+}
+}
+
+@media (max-width:768px) {
+  .faq-main-section-div{
+    padding: 0;
+  }
+  .faq-container{
+    padding: 0 12px;
+  }
+  .faq-inner-section-div{
+    padding: 0 12px;
+  }
+  h6.subtitle {
+    text-align: start;
+}
+h2.title-faq-genral {
+    text-align: start;
+    font-size: 30px;
+}
+.faq-section-text-main-div {
+    padding: 0 43px;
+}
+
+}
+@media (max-width:681px) {
+  .faq-section-text-main-div {
+        padding: 0px;
+    }
+}

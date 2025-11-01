@@ -35,6 +35,7 @@ const Banner = () => {
             ref={container}
             style={{ backgroundImage: `url(${heroImage})` }}
         >
+            
             <div className="banner-overlay">
                 <h1 className="banner-title motion-text">
                     You Approach The Architecture
