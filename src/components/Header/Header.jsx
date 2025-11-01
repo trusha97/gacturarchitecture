@@ -124,26 +124,26 @@ const Header = () => {
           ))} */}
 
           {menuData.map((menu) => (
-    <li key={menu.key}>
-      <div className="mobile-dropdown" onClick={() => toggleDropdown(menu.key)}>
-        <span>{menu.name}</span>
-        <span className={`arrow-icon ${openDropdown === menu.key ? 'rotate' : ''}`}>
-          <img className="down-aerrow" src={downarrow} />
-        </span>
-      </div>
-      <ul className={`sub-menu ${openDropdown === menu.key ? 'open' : ''}`}>
-        {menu.items.map((item, index) => (
-          <li key={index}>
-            <Link to={item.path} onClick={() => setIsMenuOpen(false)}>{item.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </li>
-  ))}
+            <li key={menu.key}>
+              <div className="mobile-dropdown" onClick={() => toggleDropdown(menu.key)}>
+                <span>{menu.name}</span>
+                <span className={`arrow-icon ${openDropdown === menu.key ? 'rotate' : ''}`}>
+                  <img className="down-aerrow" src={downarrow} />
+                </span>
+              </div>
+              <ul className={`sub-menu ${openDropdown === menu.key ? 'open' : ''}`}>
+                {menu.items.map((item, index) => (
+                  <li key={index}>
+                    <Link to={item.path} onClick={() => setIsMenuOpen(false)}>{item.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
           {/* <li><Link to="/contact" className="mobile-nav-item">Contact</Link></li> */}
           <li>
-    <Link to="/contact" className="mobile-nav-item" onClick={() => setIsMenuOpen(false)}>Contact</Link>
-  </li>
+            <Link to="/contact" className="mobile-nav-item" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+          </li>
         </ul>
       </div>
     </header>

@@ -1,0 +1,65 @@
+.architectural-services-div {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.services-div-architectural {
+    display: block; 
+    text-align: start; 
+    position: relative; 
+    translate: none; 
+    rotate: none; 
+    scale: none; 
+    transform-origin: 483px 162px; 
+    transform: translate3d(0px, 0px, 0px); 
+    opacity: 1;
+}
+
+.aechive-button-div {
+    border:1px solid#FFFFFF44;
+    margin: 0px 0px 30px 0px;
+    padding: 0.25rem 1.5rem 0.25rem 1.5rem;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 50rem 50rem 50rem 50rem;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+        max-width: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.architectural-button-div-inner {
+    font-family: "DM Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color: #FFFFFF;
+}
+.architecal-title-div {
+    margin-top: 30px;
+    display: block; 
+    text-align: start; 
+    position: relative; 
+    translate: none; 
+    rotate: none; 
+    scale: none; 
+    transform-origin: 483px 162px; 
+    transform: translate3d(0px, 0px, 0px); 
+    opacity: 1;
+}
+.architecal-title-button-div {
+    font-family: "Jost", Sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #FFFFFF;
+        max-width: 930px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}

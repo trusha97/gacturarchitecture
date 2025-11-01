@@ -1,0 +1,30 @@
+.service-trend-div {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+.service-trend-about-text1 {
+  font-family: "Jost", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #bc9b73;
+  margin-left: 12px;
+  letter-spacing: 0.5px;
+}
+.service-trend-text h2 {
+  color: #ffffff;
+  font-family: "Jost", Sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 0;
+}
+.service-trend-text p {
+  color: #999999;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  max-width: 600px;
+}

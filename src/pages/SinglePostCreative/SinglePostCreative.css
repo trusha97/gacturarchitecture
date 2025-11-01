@@ -1,0 +1,107 @@
+.singlepost-creative-banner-div {
+  overflow: hidden;
+  position: relative;
+  padding: 180px 76.8px 50px;
+  border-radius: 7px;
+}
+.image-single-div-main-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: #15222b; */
+  /* background-color: #0C0F16; */
+  background-color: transparent;
+  --background-overlay: "";
+  background-image: linear-gradient(180deg, #101010cc 0%, #1010104d 100%);
+  opacity: 0.6;
+}
+.image-single-div-main-img {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-position: center;
+}
+.center-content1 {
+  text-align: center;
+  z-index: 2;
+  display: grid;
+}
+.singlecreative-title {
+  color: #fff;
+  margin: 0;
+  font-family: "Jost", Sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 1.3em;
+  padding-bottom: 30px;
+}
+.box4 {
+  background-color: #10101077;
+  border-color: #ffffff11;
+  padding: 10px 30px 10px 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  min-width: 250px;
+  margin-top: 30px;
+  /* width: 340px; */
+  margin: 0 auto;
+}
+.box-right4 .circle-img4 {
+  background-image: url("../../assets/images/hero2.webp");
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.box-title4 {
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 4px;
+  font-family: "Jost", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+.box-sub4 {
+  color: #ffffff;
+  margin: 0;
+  text-align: left;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8em;
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .singlecreative-title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 501px) {
+  .box-title4 {
+    font-size: 14px;
+  }
+  .box-sub4 {
+    font-size: 12px;
+  }
+  .singlepost-creative-banner-div {
+    padding: 180px 12.8px 50px;
+  }
+  /* .box4 {
+    width: 270px;
+  } */
+}

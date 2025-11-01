@@ -1,0 +1,71 @@
+.poertfolio-image-aenimted {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.portfolios2-image-div-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.portfolio-aemited-image-main-div {
+  height: 550px;
+  width: 66.66%;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-aemited-image-main-div2 {
+  height: 400px;
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Images */
+.portfolio-aemited-image-main-div img,
+.portfolio-aemited-image-main-div2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/* Overlay text */
+.portfolio-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.4s ease;
+  z-index: 2;
+  color: #fff;
+}
+
+.portfolio-overlay h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.portfolio-tag {
+  background: #000;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+/* Hover effect */
+.portfolio-aemited-image-main-div:hover .portfolio-overlay,
+.portfolio-aemited-image-main-div2:hover .portfolio-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
